@@ -1,0 +1,96 @@
+body {
+  background: var(--w);
+  overflow-x: hidden;
+  width: 100%;
+}
+body main {
+  font-family: "Rubik", "Open Sans", sans-serif, Bahnschrift;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10vh;
+  gap: 2em;
+}
+body main section {
+  width: 60%;
+}
+body main section.header-presentation {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+body main section.conv-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+body main section.conv-wrapper .conversion-from {
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--grey-border);
+}
+body main section.conv-wrapper .conversion-from label {
+  margin: 1em;
+}
+body main section.conv-wrapper .conversion-from label textarea {
+  font-family: "Rubik", "Open Sans", sans-serif, Bahnschrift;
+  font-size: 1em;
+  border: 0;
+  resize: vertical;
+  width: 100%;
+  min-height: 20vh;
+  max-height: 40vh;
+  outline: none;
+}
+body main section.conv-wrapper .conversion-from .row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  height: 10vh;
+}
+body main section.conv-wrapper .conversion-from .row .element-proposal {
+  padding: 1em;
+  background: var(--grey-container);
+  border-radius: 5px;
+  cursor: pointer;
+}
+body main section.code-github .header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+body main section.code-github .code-example-github {
+  margin-top: 1em;
+}
+body main .color-subtitle {
+  color: var(--grey-font);
+}
+
+@media all and (max-width: 800px) {
+  section {
+    width: 90% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

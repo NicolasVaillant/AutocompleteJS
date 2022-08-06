@@ -1,0 +1,92 @@
+@mixin centerFlex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+body{
+    background: var(--w);
+    overflow-x: hidden;
+    width: 100%;
+
+    main{
+        font-family: "Rubik", "Open Sans", sans-serif, Bahnschrift;
+        @include centerFlex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10vh;
+        gap: 2em;
+
+        section{
+            width: 60%;
+
+            &.header-presentation{
+                @include centerFlex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5em;
+            }
+            &.conv-wrapper{
+                @include centerFlex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5em;
+                .conversion-from{
+                    gap: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid var(--grey-border);
+
+                    label{
+                        margin: 1em;
+
+                        textarea{
+                            font-family: "Rubik", "Open Sans", sans-serif, Bahnschrift;
+                            font-size: 1em;
+                            border: 0;
+                            resize: vertical;
+                            width: 100%;
+                            min-height: 20vh;
+                            max-height: 40vh;
+                            outline: none;
+                        }
+                    }
+                    .row{
+                        @include centerFlex;
+                        flex-direction: row;
+                        gap: 1em;
+                        height: 10vh;
+
+                        .element-proposal{
+                            padding: 1em;
+                            background: var(--grey-container);
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &.code-github{
+                .header{
+                    @include centerFlex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                .code-example-github{
+                    margin-top: 1em;
+                }
+            }
+        }
+        .color-subtitle{color: var(--grey-font)}
+    }
+}
+
+@media all and (max-width: 800px){
+    section{
+        width: 90% !important;
+    }
+}

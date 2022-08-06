@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="image/png" href="resources/ico/icons8_3d_touch.ico"/>
+    <link rel="shortcut icon" type="image/png" href="resources/ico/icons8_3d_touch_16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="resources/ico/icons8_3d_touch_32.png" sizes="32x32"/>
+    
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/author.css">
+    
+    <script src="js/script.js" defer></script>
+    <title>Autocomplete</title>
+</head>
+
+<body>
+    <main>
+        <section class="header-presentation">
+            <h1>Autocomplete</h1>
+            <p class="color-subtitle">Simple application pour tester l'autocomplétion.</p>
+        </section>
+        <section class="conv-wrapper">
+            <div class="col conversion-from">
+                <label for="conversion-from">
+                        <textarea name="conversion-from"
+                                  id="conversion-from"
+                                  spellcheck="false"
+                                  cols="30" rows="10" placeholder="Convertir du texte"></textarea>
+                </label>
+                <div class="row" id="proposalWords"></div>
+            </div>
+            <p class="color-subtitle"></p>
+        </section>
+    </main>
+</body>
+
+</html>
